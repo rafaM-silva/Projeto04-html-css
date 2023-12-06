@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Starbuks</title>
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="#" class="logo"><img src="img/logo-starbuks.png" style="width: 100px;" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Onde Estamos</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="textoTopo">
+                <h2>Aqui você não toma apenas café<br>Aqui é <span>Starbuks</span></h2>
+                <p>Com uma ampla variedade de bebidas, desde os clássicos cafés espresso até inovações sazonais, a Starbucks cativa os amantes de café com sua qualidade consistente e compromisso com ingredientes de excelência. </p>
+                <a href="#">Compre Agora</a>
+            </div>
+             <div class="imgDrinksPrincipal">
+                <img src="img/drink1-verde.png" class="starbucks"> 
+            </div>
+       
+       
+       <ul class="imgDrinks">
+        <li><img src="img/drink1-menor.png" onclick="imgTroca('drink1-verde')"></li>
+        <li><img src="img/drink2menor.png" onclick="imgTroca('drink2-rosa')"></li>
+        <li><img src="img/drink3menor.png" onclick="imgTroca(drink3-rosaEazul)"></li>
+       </ul>
+        </div> 
+    </section>
+
+    <script type="text/javascript">
+        function imgTroca(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+    </script>
+
+</body>
+</html>
